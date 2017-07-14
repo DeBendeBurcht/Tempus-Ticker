@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>New Tab</title>
+    <link rel="icon" href="icon_128.png" type="image/x-icon" />
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+      h1 {
+        font-size: 120px;
+        font-family: 'Helvetica Neue', 'Arial', sans-serif;
+        font-weight: 900;
+        text-align: center;
+        color: white;
+      }
+
+      body {
+        background: #C02425;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #F0CB35, #C02425); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+
+      .container {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1><span id="name"></span> is<br><span id="age"></span><br>years old</h1>
+    </div>
+    <script src="counter.js"></script>
+  </body>
+</html>
