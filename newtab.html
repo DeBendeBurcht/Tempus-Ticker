@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>New Tab</title>
-    <link rel="icon" href="icon_128.png" type="image/x-icon" />
-    <link rel="stylesheet" href="normalize.css">
-    <style>
+<head>
+  <title>New Tab</title>
+  <link rel="icon" href="icon_128.png" type="image/x-icon" />
+  <link rel="stylesheet" href="normalize.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap'); 
+
+
+    html, body {
+      height: 100%;
+      background-image: 
+        radial-gradient(circle farthest-corner at top left, #8c9eff, rgba(140, 158, 255, 0) 50%),
+        radial-gradient(circle farthest-side at top right, #7986cb, rgba(121, 134, 203, 0) 20%), 
+        radial-gradient(circle farthest-corner at bottom right, #b2dfdb, rgba(178, 223, 219, 0) 33%),
+        radial-gradient(circle farthest-corner at top right, #9575cd, rgba(149, 117, 205, 0) 50%),
+        radial-gradient(ellipse at bottom center, #78909c, rgba(120, 144, 156, 0) 80%);
+    }
+
+    .container {
+      display: flex;
+      height: 100vh; /* Use viewport height for centering */
+      align-items: center;
+      justify-content: center;
+      text-align: center; /* Center the entire block */
+    }
+
+    h1 {
+      font-size: 80px;
+      font-family: 'Montserrat', serif; 
+      font-weight: 900;
+      text-align: center;
+      text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+      color: white;
+    }
+
+    @media (max-width: 900px) {
       h1 {
-        font-size: 120px;
-        font-family: 'Helvetica Neue', 'Arial', sans-serif;
-        font-weight: 900;
-        text-align: center;
-        text-shadow: 0 0 6px #000000;
-        color: white;
+        font-size: 80px;
       }
+    }
 
-      body {
-        background: #C02425;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #F0CB35, #C02425); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 64px;
       }
-
-      .container {
-        display: flex;
-        height: 100vh;
-        align-items: center;
-        justify-content: center;
-      }
-      
-      @media (max-width: 900px) {
-        h1 {
-          font-size: 80px;
-        }
-      }
-      
-      @media (max-width: 600px) {
-        h1 {
-          font-size: 64px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <h1><span id="name"></span> is<br><span id="age"></span><br>years old</h1>
-    </div>
-    <script src="counter.js"></script>
-  </body>
+    }
+  </style>
+</head>
+<body>
+  <br><br><h1><span id="name"></span> I am my Greatest Project. <br><span id="age"></span><br> 3rd line</h1>
+  <script src="counter.js"></script>
+</body>
 </html>
