@@ -1,34 +1,80 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Age Counter</title>
+    <title>Age Counter - Settings</title>
     <link rel="stylesheet" href="normalize.css">
     <style>
-      h1,
-      label {
+      /* Global Styling */
+      body {
+        font-family: 'Helvetica Neue', 'Arial', sans-serif;
+        background: #f7f7f7;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
         font-family: 'Helvetica Neue', 'Arial', sans-serif;
         font-weight: 900;
+        font-size: 24px;
+        margin-bottom: 20px;
       }
-      
-      input {
+
+      label {
+        font-size: 14px;
+        font-weight: bold;
+        display: block;
         margin-bottom: 6px;
       }
-      
-      .container {
-        padding: 12px;
-        padding-top: 0;
+
+      input,
+      select,
+      button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        font-size: 14px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+      }
+
+      button {
+        background: #4CAF50;
+        color: white;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      button:hover {
+        background: #45a049;
       }
     </style>
   </head>
   <body>
     <div class="container">
       <h1>Settings</h1>
-      <label>Name</label><br>
-      <input id="name" type="text"><br>
-      <label>Birthday</label><br>
-      <input id="date" type="datetime-local"><br>
-      <label>Background</label><br>
-      <select name="background">
+      
+      <!-- Name Input -->
+      <label for="name">Name</label>
+      <input id="name" type="text" placeholder="Enter your name">
+
+      <!-- Birthday Input -->
+      <label for="date">Birthday</label>
+      <input id="date" type="datetime-local">
+
+      <!-- Background Selector -->
+      <label for="background">Background</label>
+      <select id="background">
         <option value="red">Red</option>
         <option value="orange">Orange</option>
         <option value="yellow">Yellow</option>
@@ -40,7 +86,25 @@
         <option value="black">Black</option>
         <option value="random">Random</option>
       </select>
+
+      <!-- Font Selector -->
+      <label for="font">Font</label>
+      <select id="font">
+        <option value="Arial">Arial</option>
+        <option value="'Roboto', sans-serif">Roboto</option>
+        <option value="'Comic Sans MS', cursive">Comic Sans</option>
+        <option value="'Courier New', monospace">Courier New</option>
+        <option value="'Georgia', serif">Georgia</option>
+      </select>
+
+      <!-- Custom Text Input -->
+      <label for="customText">Custom Text Above Age</label>
+      <input id="customText" type="text" placeholder="Enter text to display above age">
+      
+      <!-- Save Button -->
+      <button id="save">Save Settings</button>
     </div>
+
     <script src="options.js"></script>
   </body>
 </html>
