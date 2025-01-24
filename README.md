@@ -1,4 +1,4 @@
-# Beautifull Age Counter (Tab Extention)
+# Tempus Ticker (Tab Extention)
 
 An updated version of a tab chrome extension that displays the age of the user in real time accurate to 9 decimal places.
 
