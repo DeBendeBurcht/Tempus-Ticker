@@ -1,7 +1,7 @@
 {
   "name": "Tempus Ticker",
   "description": "Feel life slowly drifting as you get things done. TempusTicker shows a live counter of your age to motivate you.",
-  "version": "0.2.0",
+  "version": "0.2.01",
   "manifest_version": 3,
   "author": "Project Integro (Private Project)",
   "icons": {
